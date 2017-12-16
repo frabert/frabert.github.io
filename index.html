@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Francesco Bertolaccini" />
+  <meta name="description" content="Francesco Bertolaccini. Developer." />
+  <meta name="keywords" content="developer,programmer,francesco,bertolaccini" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.min.css" />
+  <style>
+    body {
+      background-color: #f8f8f8;
+      color: #222222;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .section {
+      text-align: center;
+      padding: 1em;
+    }
+
+    .container {
+      display: inline-block;
+      min-width: 50%;
+      text-align: left;
+    }
+
+    @media screen and (min-width:600px) {
+      .container {
+        max-width: 50%;
+      }
+    }
+
+    h1.header {
+      font-size: 36pt;
+      font-family: 'Crimson Text', serif;
+    }
+
+    h1.header::before {
+      content: "# ";
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #999999;
+    }
+
+    h2 {
+      font-family: 'Crimson Text', serif;
+    }
+
+    h2::before {
+      content: "// ";
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #999999;
+    }
+
+    p::before {
+      content: "> ";
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #999999;
+    }
+
+    a {
+      color: #2a3f6b;
+      text-decoration: inherit;
+      font-style: italic;
+    }
+  </style>
+  <title>Francesco Bertolaccini</title>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div class="container">
+        <h1 class="header" id="headline">Francesco Bertolaccini</h1>
+        <h2>Developer</h2>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I'm a Computer Science student, and I've been programming for the most part of my life.
+            I've always been intrigued by computer and automatic machines in general, now
+            I particularly enjoy experimenting with programming languages, music and electronics.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <p>I have been using the .NET framework for over 10 years, and is my platform of
+            choice for rapid application prototyping and deployment. I am especially intrigued
+            by the mixture of object-oriented and functional programming in the F# programming language.</p>
+        <p>I am also comfortable programming in C++ (especially modern C++11/14), JavaScript (Node) and PHP</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <h1 class="header"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" style="width: 0.7em; height: 0.7em;"><a class="github" href="https://github.com/frabert/">frabert</a> on GitHub</h1>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        css3: true,
+        scrollingSpeed: 300,
+        scrollBar: true
+      });
+      $(".header").fitText();
+    });
+  </script>
+</body>
+
+</html>
